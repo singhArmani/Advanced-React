@@ -9,9 +9,12 @@
 </head>
 
 <body>
-  <h2>Hello Express and Ejs --
-    <%= answer %>
-  </h2>
+  <div id="root">
+    Loading...
+  </div>
+  <!-- use webpack to package our index.js (whole application) into bundle.js and we use that in here.
+  We going to place bundle.js inside the public directory-->
+  <script src="/bundle.js" charset="utf-8"></script>
 </body>
 
 </html>
