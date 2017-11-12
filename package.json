@@ -4,21 +4,15 @@
   "description": "Advancded React",
   "main": "lib/server.js",
   "scripts": {
-    "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
+    "dev":
+      "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
   "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "presets": ["react", "env", "stage-2"]
   },
-  "keywords": [
-    "advanced",
-    "react"
-  ],
+  "keywords": ["advanced", "react"],
   "author": "Aman singh",
   "license": "ISC",
   "devDependencies": {
